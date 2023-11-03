@@ -6,7 +6,7 @@
 /*   By: rchiewli <rchiewli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 18:12:46 by psuanpro          #+#    #+#             */
-/*   Updated: 2023/11/03 23:02:35 by rchiewli         ###   ########.fr       */
+/*   Updated: 2023/11/03 23:22:01 by rchiewli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -251,7 +251,6 @@ std::string	HttpRequestHandle::postMethod(const Request& req, const t_serverConf
 
 std::string	HttpRequestHandle::validateMethod(const Request& req,const t_con& config) {
 
-	std::cout << GRNB << req << RES << std::endl;
 	t_detail tmp = this->validateHostRequestAndGetServer(const_cast<Request&>(req), config);
 	if (tmp.status) {
 		if (req.getMethod() == "GET") {

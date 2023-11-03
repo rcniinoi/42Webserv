@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: psuanpro <psuanpro@student.42.fr>          +#+  +:+       +#+         #
+#    By: rchiewli <rchiewli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/16 20:52:32 by psuanpro          #+#    #+#              #
-#    Updated: 2023/11/01 15:47:36 by psuanpro         ###   ########.fr        #
+#    Updated: 2023/11/03 23:20:09 by rchiewli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,13 +21,10 @@ CPPFLAGS	= -g -Wall -Werror -Wextra -fsanitize=address
 
 SRC_DIR		= ./src/
 
-MODULE1		= Parsing.cpp \
-				Conf.cpp
+MODULE1		=	Conf.cpp
 
 MODULE2		= Server.cpp \
 				Response.cpp \
-				Store.cpp \
-				FileHandle.cpp \
 				Request.cpp \
  				HttpRequestHandle.cpp
 
@@ -109,8 +106,5 @@ fclean: clean
 
 
 re: fclean all
-
-run: re
-	./webserv config.conf
 
 .PHONY: all clean fclean re run

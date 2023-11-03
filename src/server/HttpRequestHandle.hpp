@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   HttpRequestHandle.hpp                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: psuanpro <psuanpro@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rchiewli <rchiewli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/18 18:12:48 by psuanpro          #+#    #+#             */
-/*   Updated: 2023/11/02 15:23:25 by psuanpro         ###   ########.fr       */
+/*   Updated: 2023/11/03 23:20:39 by rchiewli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include "../struct.hpp"
 # include "Response.hpp"
 # include "Request.hpp"
-# include "Store.hpp"
 # include "../parsing/Conf.hpp"
 # include "../cgihandler/CgiHandler.hpp"
 
